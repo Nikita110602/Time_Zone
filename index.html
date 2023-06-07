@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">TIMEX</a></li>
+                <li><a href="#">Unix clock</a></li>
+                <li><a href="#">Converter</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <div class="month">
+            <table>
+                <tr>
+                    <td><a href="month.html"><button>MM/DD/YYYY</button></a></td>
+                    <td><a href="date.html"><button>DD/MM/YYYY</button></a></td>
+                </tr>
+            </table>
+            
+            
+            <div class="hour">
+            <table>
+            <tr>
+            <td><a href="twenty.html"><button>24Hr</button></a></td>
+            <td><a href="twelve.html"><button>12Hr</button></a></td>
+             </tr>
+           </table>
+           <script class="june">
+            const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+
+const d = new Date();
+const date = new Date();
+const year = new Date();
+const element = document.write( '<span style="font-size: 30px; padding-left: 20px; ">'          + monthNames[d.getMonth()] + " " + date.getDate() + " " + year.getFullYear());
+        </script>
+        </div>
+        </div>
+    <div class="timebox">
+        <p class="date"></p>
+        <h1>INDIA</h1>
+        
+        <p class="indiatime"></p>
+        
+        <table>
+            <tr>
+                <td><a href="index.html"><button>India</button></a></td>
+                <td><a href="china.html"><button>China</button></a></td>
+                <td><a href="italy.html"><button>Italy</button></a></td>
+                <td><a href="new.html"><button>NewZealand</button></a></td>
+            </tr>
+        </table>
+    </div>
+    
+</section>
+    </main>
+   
+    <script>
+        var getIndiaTime = function() {
+            document.querySelector(".indiatime").innerHTML = new Date().toLocaleString("en-US", { timeZone: 'Asia/Kolkata', timeStyle: 'medium', hourCycle: 'h24' });
+        }
+        getIndiaTime();
+        setInterval(getIndiaTime, 1000);
+       
+        
+    </script>
+</body>
+</html>

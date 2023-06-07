@@ -1,0 +1,86 @@
+button {
+    background-color: #080202; /* Green */
+    border: none;
+    color: white;
+    padding: 20px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    
+
+  }
+  .timebox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    
+    
+   
+  }
+  .indiatime{
+    margin-top: auto;
+    font-size: 100px;
+    padding-bottom: 8%;
+    padding-left: 180px;
+  }
+  
+  .timebox table{
+    padding-left: 220px;
+    width: 100%;
+    padding-bottom: 23%;
+    border-collapse: 20px;
+    }
+    .date {
+        font-size: 20px;
+        font-weight: bold;
+        margin: 10px 0;
+      }
+      .navbar {
+        background-color: #f1f1f1;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+    .navbar li {
+        margin-right: 10px;
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        color: #333;
+        padding: 8px;
+    }
+    .month button{
+        padding: 15px 30px;
+        font-size: 17px;
+    }
+    .hour{
+      float : right;
+    }
+    .june{
+      font-size: 40px;
+    }
+    .timebox h1{
+      font-size: 50px;
+      color: #4E3636;
+      padding-left: 19%;
+     
+
+    }
+    
+  
+
+  
+  
