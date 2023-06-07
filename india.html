@@ -29,6 +29,17 @@
                         <td><a href="date.html"><button>DD/MM/YYYY</button></a></td>
                     </tr>
                 </table>
+                <script class="june">
+                    const monthNames = ["January", "February", "March", "April", "May", "June",
+          "July", "August", "September", "October", "November", "December"
+        ];
+        
+        const d = new Date();
+        const date = new Date();
+        const year = new Date();
+        const element = document.write( '<span style="font-size: 30px; padding-left: 20px; ">'          + monthNames[d.getMonth()] + " " + date.getDate() + " " + year.getFullYear());
+        element.style.fontSize = "20px"
+                </script>
                 
                 <div class="hour">
                 <table>
@@ -38,17 +49,6 @@
                  </tr>
                </table>
             </div>
-            <script class="june">
-                const monthNames = ["January", "February", "March", "April", "May", "June",
-      "July", "August", "September", "October", "November", "December"
-    ];
-    
-    const d = new Date();
-    const date = new Date();
-    const year = new Date();
-    const element = document.write( '<span style="font-size: 30px; padding-left: 20px; ">'          + monthNames[d.getMonth()] + " " + date.getDate() + " " + year.getFullYear());
-    element.style.fontSize = "20px"
-            </script>
             </div>
     <div class="timebox">
         <p class="date"></p>

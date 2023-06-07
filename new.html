@@ -19,57 +19,63 @@
             </ul>
         </nav>
     </header>
+    
     <main>
         <section>
             <div class="month">
-                <table>
-                    <tr>
-                        <td><a href="month.html"><button>MM/DD/YYYY</button></a></td>
-                        <td><a href="date.html"><button>DD/MM/YYYY</button></a></td>
-                    </tr>
-                </table>
-                <script class="june">
-                    const monthNames = ["January", "February", "March", "April", "May", "June",
-          "July", "August", "September", "October", "November", "December"
-        ];
-        
-        const d = new Date();
-        const date = new Date();
-        const year = new Date();
-        const element = document.write( '<span style="font-size: 30px; padding-left: 20px; ">' + date.getDate() + " " + monthNames[d.getMonth()] + " "  + year.getFullYear());
-        
-                </script>
-                <div class="hour">
-                <table>
+            <table>
                 <tr>
-                <td><a href="twenty.html"><button>24Hr</button></a></td>
-                <td><a href="twelve.html"><button>12Hr</button></a></td>
-                 </tr>
-               </table>
-            </div>
-            </div>
+                    <td><a href="month.html"><button>MM/DD/YYYY</button></a></td>
+                    <td><a href="date.html"><button>DD/MM/YYYY</button></a></td>
+                </tr>
+            </table>
+            <script class="june">
+                const monthNames = ["January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ];
+    
+    const d = new Date();
+    const date = new Date();
+    const year = new Date();
+    const element = document.write( '<span style="font-size: 30px; padding-left: 20px; ">'          + monthNames[d.getMonth()] + " " + date.getDate() + " " + year.getFullYear());
+    element.style.fontSize = "20px"
+            </script>
+            <div class="hour">
+            <table>
+            <tr>
+            <td><a href="twenty.html"><button>24Hr</button></a></td>
+            <td><a href="twelve.html"><button>12Hr</button></a></td>
+             </tr>
+           </table>
+        </div>
+        </div>
+
     <div class="timebox">
-        <h1 className="h1">NEW YORK</h1>
+        <p class="date"></p>
+        <h1 class="h1">NEW YORK</h1>
         <p class="indiatime"></p>
-    <table>
-        <tr>
-            <td><a href="india.html"><button>India</button></a></td>
-            <td><a href="china.html"><button>China</button></a></td>
-            <td><a href="italy.html"><button>Italy</button></a></td>
-            <td><a href="new.html"><button>NewZealand</button></a></td>
-            
-        </tr>
-    </table>
+        
+        <table>
+            <tr>
+                <td><a href="india12.html"><button>India</button></a></td>
+                <td><a href="china12.html"><button>China</button></a></td>
+                <td><a href="italy12.html"><button>Italy</button></a></td>
+                <td><a href="new12.html"><button>NewZealand</button></a></td>
+            </tr>
+        </table>
     </div>
     
 </section>
     </main>
+   
     <script>
         var getIndiaTime = function() {
             document.querySelector(".indiatime").innerHTML = new Date().toLocaleString("en-US", { timeZone: 'America/New_York', timeStyle: 'medium', hourCycle: 'h24' });
         }
         getIndiaTime();
         setInterval(getIndiaTime, 1000);
+        var now = new Date();
+         document.write(now.toDateString("date"));
         
     </script>
 </body>

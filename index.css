@@ -1,12 +1,14 @@
 button {
-    background-color: #080202; /* Green */
+   /* Green */
     border: none;
-    color: white;
+    background-color: #C2DEDC;
+    color: #0d0d0d;
     padding: 20px 70px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 25px;
+    border-radius: 30px;
     
 
   }
@@ -31,17 +33,21 @@ button {
   .timebox table{
     padding-left: 220px;
     width: 100%;
-    padding-bottom: 23%;
+    padding-bottom: 34%;
     border-collapse: 20px;
     }
+    .timebox button:hover {
+      background-color: black ;
+      color: white;
+  }
     .date {
         font-size: 20px;
         font-weight: bold;
         margin: 10px 0;
       }
       .navbar {
-        background-color: #f1f1f1;
-        padding: 10px;
+        background-color: #C2DEDC;
+        padding: 25px;
         display: flex;
         justify-content: space-between;
     }
@@ -61,13 +67,20 @@ button {
         text-decoration: none;
         color: #333;
         padding: 8px;
+        font-size: 25px;
     }
     .month button{
         padding: 15px 30px;
         font-size: 17px;
+        background-color: antiquewhite;
+        color: black;
     }
+    .month button:hover {
+      background-color: black;
+      color: white;
+  }
     .hour{
-      float : right;
+      float : right; 
     }
     .june{
       font-size: 40px;
@@ -76,6 +89,7 @@ button {
       font-size: 50px;
       color: #4E3636;
       padding-left: 19%;
+     margin-top: 30px;
      
 
     }

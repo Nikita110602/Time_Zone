@@ -13,8 +13,8 @@
         <nav class="navbar">
             <ul>
                 <li><a href="#">TIMEX</a></li>
-                <li><a href="#">Unix clock</a></li>
-                <li><a href="#">Converter</a></li>
+                <li>Unix clock</li>
+                <li>Converter</li>
                 
             </ul>
         </nav>
@@ -30,7 +30,16 @@
                 </tr>
             </table>
             
-            
+            <script class="june">
+                const monthNames = ["January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ];
+    
+    const d = new Date();
+    const date = new Date();
+    const year = new Date();
+    const element = document.write( '<span style="font-size: 30px; padding-left: 20px; ">'          + monthNames[d.getMonth()] + " " + date.getDate() + " " + year.getFullYear());
+            </script>
             <div class="hour">
             <table>
             <tr>
@@ -38,16 +47,7 @@
             <td><a href="twelve.html"><button>12Hr</button></a></td>
              </tr>
            </table>
-           <script class="june">
-            const monthNames = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
-];
-
-const d = new Date();
-const date = new Date();
-const year = new Date();
-const element = document.write( '<span style="font-size: 30px; padding-left: 20px; ">'          + monthNames[d.getMonth()] + " " + date.getDate() + " " + year.getFullYear());
-        </script>
+           
         </div>
         </div>
     <div class="timebox">
