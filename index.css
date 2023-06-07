@@ -28,11 +28,14 @@ button {
   padding-bottom: 8%;
   padding-left: 180px;
 }
+p.indiatime{
+ margin-bottom: 8px;
+}
 
 .timebox table {
   padding-left: 220px;
   width: 100%;
-  padding-bottom: 34%;
+  padding-bottom: 60%;
   border-collapse: 20px;
 }
 
